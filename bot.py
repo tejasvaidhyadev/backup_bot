@@ -17,7 +17,7 @@ def reply():
         user_phone_number = user_phone_number.split(':')[1]
 
     resp = MessagingResponse()
-    reply = f"I didn't get it 😕. For more detail type 'help' or whatsapp at +91 9340004079"  # default message
+    reply = f"I didn't get it 😕. For more detail type '!help' or whatsapp at +91 9340004079"  # default message
 
     if num_media > 0:
         if media.startswith('image/'):
