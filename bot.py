@@ -13,7 +13,7 @@ def reply():
     user_phone_number = request.values['From']
 
     if user_phone_number.startswith('whatsapp'):
-        # from format: 'whatsapp:+490001112223'
+        # from format: 'whatsapp:+49000111222'
         user_phone_number = user_phone_number.split(':')[1]
 
     resp = MessagingResponse()
